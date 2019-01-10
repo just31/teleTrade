@@ -1,0 +1,260 @@
+@import "variables.scss";
+
+.teletrade-awards {
+  position: relative;
+  background: $color-pink;
+}
+
+.teletrade-awards__main {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.teletrade-awards__ear {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teletrade-awards__ear-head {
+  margin-bottom: 20px;
+  font-family: $font-regular;
+  font-size: 25px;
+}
+
+.teletrade-awards__ear-pict {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  img {
+    margin-right: 30px;
+  }
+}
+
+.teletrade-awards__question {
+  font-family: $font-light;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+.teletrade-awards__question-head {
+  margin-bottom: 20px;
+  font-family: $font-light;
+  font-size: 25px;
+}
+
+.teletrade-awards__question-text {
+  font-family: $font-light;
+  font-size: 14px;
+  max-width: 380px;
+  line-height: 1.4;
+}
+
+.teletrade-awards__ear-button {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.teletrade-awards__ear-button-red {
+  position: relative;
+  margin-right: 10px;
+}
+
+.teletrade-awards__ear-button-red button {
+  width: 240px;
+  height: 40px;
+  line-height: 35px;
+  background: $color-pink;
+  border: 2px $primary-color solid;
+  outline: 0;
+  font-size: 16px;
+  &:hover {
+    background-color: #bd0847;
+  }
+}
+
+.teletrade-awards__ear-button-grey {
+  position: relative;
+  margin-left: 10px;
+}
+
+.teletrade-awards__ear-button-grey {
+  position: relative;
+  margin-left: 10px;
+  button {
+    width: 240px;
+    height: 40px;
+    line-height: 38px;
+    background: $color-grey;
+    border: 0;
+    font-size: 16px;
+    &:hover {
+      background-color: #393838;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .teletrade-awards__ear-pict img {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .teletrade-awards__ear-pict {
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .teletrade-awards__ear-pict img {
+    margin-right: 0;
+    max-width: 25%;
+  }
+
+  .teletrade-awards__question {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .teletrade-awards__ear-button-red button {
+    width: 180px;
+  }
+
+  .teletrade-awards__ear-button-grey button {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+  .teletrade-awards__ear-head {
+    font-size: 22px;
+  }
+  .teletrade-awards__question-head {
+    font-family: $font-regular;
+    font-size: 22px;
+  }
+
+  .teletrade-awards__ear-pict {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .teletrade-awards__question-text {
+    max-width: 250px;
+  }
+
+  .teletrade-awards__ear-button-red button {
+    width: 150px;
+  }
+
+  .teletrade-awards__ear-button-grey button {
+    width: 150px;
+  }
+
+  .teletrade-awards__question {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .teletrade-awards {
+    top: -1px;
+    width: 660px;
+  }
+
+  .teletrade-awards__main {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teletrade-awards__ear-pict {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 500px;
+  }
+
+  .teletrade-awards__ear-pict img {
+    flex-basis: 30%;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .teletrade-awards__ear-button-red button {
+    width: 270px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 20px;
+  }
+
+  .teletrade-awards__ear-button-grey button {
+    width: 270px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .teletrade-awards {
+    width: 660px;
+  }
+
+  .teletrade-awards__ear-head {
+    font-size: 28px;
+  }
+
+  .teletrade-awards__ear-button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teletrade-awards__ear-button-red {
+    margin-right: 0;
+  }
+
+  .teletrade-awards__ear-button-grey {
+    position: relative;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .teletrade-awards__question {
+    margin-top: 35px;
+  }
+
+  .teletrade-awards__question-head {
+    font-size: 44px;
+  }
+
+  .teletrade-awards__question-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .teletrade-awards__ear-button-red button {
+    width: 600px;
+    height: 80px;
+    font-size: 30px;
+    border: 2px #ffffff solid;
+  }
+
+  .teletrade-awards__ear-button-grey button {
+    width: 600px;
+    height: 80px;
+    font-size: 30px;
+  }
+}

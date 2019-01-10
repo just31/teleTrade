@@ -1,0 +1,512 @@
+@import "variables.scss";
+
+.teletrade-header {
+  background: url(../images/1980-Fullscreen.jpg) no-repeat, url(../images/header_right_cover.png) no-repeat;
+  background-position: -26% 100%, 100% 100% !important;
+  background-size: 85% 100%, 22% 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .teletrade-header {
+    background: url(../images/demo-vip-1024.jpg) no-repeat, url(../images/header_right_cover.png) no-repeat;
+    background-position: -26% 100%, 100% 100% !important;
+    background-size: 81.7% 100%, 24% 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 660px) {
+  .teletrade-header {
+    background: url(../images/demo-vip-660.jpg) no-repeat !important;
+    background-size: contain !important;
+    background-position: 1px -2px !important;
+    width: fit-content;
+  }
+}
+
+.teletrade-header__left {
+  margin-top: 40px;
+  margin-left: 50px;
+  padding-bottom: 41px;
+  max-width: 670px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 60px 88%;
+  grid-template-areas:
+          "l l l l . . i t t t t t "
+          "v v v v v v v v v v v v"
+}
+
+.teletrade-header__logo {
+  position: relative;
+  grid-area: l;
+}
+
+.teletrade-header__forex-img {
+  position: relative;
+  grid-area: i;
+}
+
+.teletrade-header__forex-text {
+  display: flex;
+  align-self: flex-end;
+  font-size: 15px;
+  margin-left: 11px;
+  grid-area: t;
+}
+
+.teletrade-header__vip {
+  margin-top: 60px;
+  padding: 20px 40px;
+  max-width: 600px;
+  grid-area: v;
+  font-size: 14px;
+  background-color: rgba(26, 138, 186, .7);
+}
+
+.teletrade-header__head {
+  font-size: 40px;
+  max-width: 400px;
+}
+
+.teletrade-header__head:after {
+  content: '';
+  display: block;
+  background: $primary-color;
+  width: 510px;
+  height: 3px;
+  margin-top: 15px;
+}
+
+.teletrade-header__list {
+  position: relative;
+  list-style: none;
+  font-size: 14px;
+}
+
+.teletrade-header__head3{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.teletrade-header__item-img {
+  position: absolute;
+  left: 10px;
+}
+
+.teletrade-header__right {
+  flex-basis: 19%;
+  position: relative;
+}
+
+.teletrade-header__24years {
+  position: relative;
+  padding-top: 170px;
+  margin-top: 35px;
+  background: url(../images/24-years.png) no-repeat;
+  background-position: center 1px;
+}
+
+.teletrade-header__24years-head {
+  text-align: center;
+  font-family: $font-regular;
+  font-size: 24px;
+}
+
+.teletrade-header__form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teletrade-header__form-head {
+  font-size: 35px;
+}
+
+.teletrade-header__form-input {
+  position: relative;
+  margin-top: 10px;
+  input[type="text"] {
+    height: 32px;
+    background: #d7d7d7;
+    border: none;
+    color: #010101;
+    text-align: center;
+    outline:none;
+    margin-top: 5px;
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #010101;
+  text-align: center;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #010101;
+  text-align: center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #010101;
+  opacity: 1;
+  text-align: center;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #010101;
+  opacity: 1;
+  text-align: center;
+}
+
+.teletrade-header__form-button {
+  position: relative;
+  margin-top: 15px;
+  button {
+    background-color: $color-pink;
+    border: 0;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    &:hover {
+      background-color: #bd0847;
+    }
+  }
+}
+
+.teletrade-header__form-check {
+  position: relative;
+  margin-left: 12px;
+  margin-top: 20px;
+  display: flex;
+}
+
+@-moz-document url-prefix() {
+  .teletrade-header__form-check input[type="checkbox"] {
+    margin: 0;
+    position: relative;
+    bottom: 8px;
+  }
+}
+
+.teletrade-header__form-check-text {
+  margin-left: 5px;
+  font-size: 11px;
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    cursor: default;
+    font-weight: normal;
+    line-height: 14px;
+    vertical-align: middle;
+    &:before {
+      position: relative;
+      bottom: 1px;
+      padding-top: 1px;
+      content: " ";
+      color: #010101;
+      font-size: 14px;
+      display: inline-block;
+      margin-right: 5px;
+      text-align: center;
+      width: 14px;
+      height: 14px;
+      background: #d7d7d7;
+      border-image: initial;
+      vertical-align: middle;
+    }
+  }
+  input {
+    &:checked + label:before {
+      content: "\2714";
+    }
+    &:disabled + label:before {
+      background: #eee;
+      color: #aaa;
+    }
+  }
+}
+
+.teletrade-header__form-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teletrade-header__form-footer-terms {
+  font-size: 13px;
+  border-bottom: 1px $primary-color solid;
+}
+
+.teletrade-header__form-footer-trading {
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1441px){
+  .teletrade-header {
+    background-size: 83% 100%, 22% 100%;
+    height: 980px;
+  }
+
+  .teletrade-header__vip {
+    margin-top: 120px;
+  }
+
+  .teletrade-header__right {
+    flex-basis: 21%;
+  }
+
+  .teletrade-header__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .teletrade-header__vip {
+    margin-top: 60px;
+    padding: 20px 40px 40px 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .teletrade-header {
+    height: 710px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .teletrade-header__right {
+    flex-basis: 23%;
+  }
+  .teletrade-header__forex-text {
+    font-size: 14px;
+    align-self: flex-start;
+    position: relative;
+    top: 6px;
+  }
+
+  .teletrade-header__vip {
+    font-size: 13px;
+  }
+
+  .teletrade-header__list {
+    font-size: 12px;
+  }
+
+  .teletrade-header__head {
+    font-size: 28px;
+  }
+
+  .teletrade-header__left {
+    margin-top: 30px;
+  }
+
+  .teletrade-header__vip {
+    margin-top: 40px;
+  }
+
+  .teletrade-header__24years {
+    padding-top: 160px;
+  }
+
+  .teletrade-header__24years-head {
+    font-size: 23px;
+  }
+
+  .teletrade-header__form-head {
+    font-size: 32px;
+
+  }
+
+  .teletrade-header__form-footer-terms {
+    margin-top: 12px;
+  }
+
+  .teletrade-header__form-footer-trading {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+  .teletrade-header {
+    background-size: 78.7% 100%, 30% 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .teletrade-header__left {
+    margin-top: 20px;
+    margin-left: 0;
+    padding-bottom: 41px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-areas: "l l l l l l l l l l l l " "v v v v v v v v v v v v" ". i t t t t t t t t t t";
+  }
+
+  .teletrade-header__vip {
+    margin-top: 20px;
+    padding: 20px 40px;
+    max-width: 630px;
+    grid-area: v;
+    font-size: 14px;
+    background-color: rgba(26, 138, 186, 0.7);
+  }
+
+  .teletrade-header__forex-img {
+    position: relative;
+    grid-area: i;
+    margin-top: 22px;
+  }
+
+  .teletrade-header__forex-text {
+    display: flex;
+    align-self: flex-end;
+    font-size: 15px;
+    margin-left: 11px;
+    grid-area: t;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .teletrade-header__right {
+    position: relative;
+    background: url(../images/header_right_cover660.png) no-repeat;
+    background-size: 100% 102%;
+    width: 660px;
+    max-height: inherit;
+    margin-top: -35px;
+  }
+
+  .teletrade-header__form-input input[type="text"] {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .teletrade-header__form-button button {
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .teletrade-header__form-check {
+    left: -24px;
+  }
+
+  .teletrade-header__form-check {
+    left: -5px;
+  }
+
+  .teletrade-header__form-check-text {
+    position: relative;
+  }
+
+  .teletrade-header__form-footer-terms {
+    font-size: 16px;
+  }
+
+  .teletrade-header__form-footer-trading {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .teletrade-header__left {
+    grid-template-rows:  60px 80%;
+  }
+
+  .teletrade-header__vip {
+    margin-top: 35px;
+    max-width: fit-content;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .teletrade-header__logo {
+    position: absolute;
+    top: 30px;
+    left: 31px;
+    grid-area: l;
+  }
+
+  .teletrade-header__24years-head {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .teletrade-header__form-head {
+    font-size: 55px;
+  }
+
+  .teletrade-header__forex-text {
+    font-size: 17px;
+  }
+
+  .teletrade-header__form-input input[type="text"] {
+    width: 600px;
+    height: 75px;
+    font-size: 28px;
+  }
+
+  .teletrade-header__form-button button {
+    width: 601px;
+    height: 78px;
+    line-height: 50px;
+    font-size: 28px;
+  }
+
+  .teletrade-header__form-check {
+    margin-top: 30px;
+  }
+
+  .teletrade-header__form-check-text {
+    font-size: 23px;
+  }
+
+  /*.teletrade-header__form-check-text input[type="checkbox"] {
+    transform: scale(2.3);
+  }*/
+
+  .teletrade-header__form-check-text label {
+    line-height: 21px;
+    &:before {
+      bottom: 3px;
+      margin-right: 12px;
+      padding-top: 2px;
+      padding-left: 1px;
+      width: 24px;
+      height: 24px;
+      font-size: 25px;
+    }
+  }
+
+    .teletrade-header__form-footer-terms {
+    font-size: 24px;
+  }
+
+  .teletrade-header__form-footer-trading {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+
+  .teletrade-header__right {
+    position: relative;
+    background: black;
+    width: 660px;
+    max-height: inherit;
+    margin-top: -38px;
+  }
+
+  .teletrade-header__24years {
+    position: relative;
+    padding-top: 266px;
+    margin-top: 70px;
+    background: url(../images/24-years.png) no-repeat;
+    background-position: center 1px;
+    background-size: 50% 64%;
+  }
+}

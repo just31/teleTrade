@@ -1,0 +1,185 @@
+@import "variables.scss";
+
+.teletrade-social {
+  background-color: $color-black;
+}
+
+.teletrade-social__icons-all {
+  display: none;
+}
+
+.teletrade-social__main {
+  position: relative;
+  padding: 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.teletrade-social__text {
+  position: relative;
+  max-width: 630px;
+}
+
+.teletrade-social__item-img {
+  position: absolute;
+  left: -35px;
+  top: 4px;
+}
+
+.teletrade-social__text p {
+  font-family: $font-regular;
+  font-size: 14px;
+  line-height: 1.4;
+  display: list-item;
+  list-style: none;
+}
+
+.teletrade-social__pict {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teletrade-social__head {
+  margin-bottom: 10px;
+  font-family: $font-light;
+  font-size: 25px;
+}
+
+.teletrade-social__icons {
+  display: flex;
+  width: 295px;
+  justify-content: space-between;
+  text-align: center;
+  .teletrade-social__item {
+    background: $color-black;
+    display: inline-block;
+    color: white;
+    font-size: 19px;
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 1px 8px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    border: 2px $primary-color solid;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    -ms-transition: All 0.2s ease;
+    transition: All 0.2s ease;
+    &:nth-child(1) {
+      line-height: 29px;
+    }
+    &:hover {
+      background: #2f2e2e;
+      border: 2px #e9e4e4 solid;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .teletrade-social__main {
+    padding: 30px 0 0;
+  }
+
+  .teletrade-social__text {
+    position: relative;
+    max-width: 530px;
+    margin-left: 60px;
+    margin-bottom: 1rem;
+    p {
+      font-family: $font-regular;
+      font-size: 13px;
+    }
+  }
+
+  .teletrade-social__pict {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+  .teletrade-social__main {
+    padding: 30px 0 0;
+  }
+
+  .teletrade-social__text {
+    position: relative;
+    max-width: 380px;
+    margin-left: 60px;
+    p {
+      font-family: $font-regular;
+      font-size: 13px;
+    }
+  }
+
+  .teletrade-social__pict {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+  }
+
+  .teletrade-social__icons {
+    margin-top: 5px;
+    i {
+      padding: 0 3px;
+    }
+    img {
+      padding: 0 2px;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .teletrade-social {
+    width: 660px;
+  }
+
+  .teletrade-social__main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teletrade-social__text {
+    max-width: 560px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    order: 2;
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .teletrade-social__pict {
+    margin-bottom: 20px;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .teletrade-social__text {
+    max-width: 520px;
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .teletrade-social__head {
+    font-size: 28px;
+  }
+
+  .teletrade-social__pict {
+    margin-bottom: 40px;
+  }
+
+}

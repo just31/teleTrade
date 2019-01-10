@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'RobotoLight';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoThin';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+$font-light: 'RobotoLight';
+$font-regular: 'RobotoRegular';
+$font-thin: 'RobotoThin';
+$primary-color: #ffffff;
+
+$color-pink: #d50a51;
+$color-black: #000000;
+$color-grey: #56595a;
+$primary-color-footer: #d9d9d9;

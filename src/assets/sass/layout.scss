@@ -1,0 +1,119 @@
+@import "variables.scss";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+* {
+  &:before, &:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, main, nav, section {
+  display: block;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  line-height: normal;
+  font: 100% $font-light;
+  color: $primary-color;
+  line-height: 1.3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+svg {
+  overflow: hidden;
+}
+
+a, button {
+  outline: none;
+  color: $primary-color;
+  font-family: $font-light;
+}
+
+button {
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+li {
+  margin: 0 0 .5rem 2rem;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  &[type="submit"], &[type="image"] {
+    cursor: pointer;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.teletrade-main {
+  position: relative;
+  background: $primary-color;
+}
+
+.teletrade__inner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teletrade__inner_fix {
+  max-width: 960px;
+}
+
+@media screen and (max-width: 660px) {
+  .teletrade__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
