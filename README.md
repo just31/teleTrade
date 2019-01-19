@@ -1,6 +1,6 @@
 Adaptive layout Landing.
 
-The layout uses the collector to compile and minify files, in particular '* .scss' files.
+The layout uses the builder to compile and minify files, in particular '* .scss' files.
 
 To build, you need to run in the project directory npm install --save-dev.
 
